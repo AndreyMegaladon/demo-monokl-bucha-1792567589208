@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Монокль — Кав'ярня у Бучі</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-neutral-900 text-neutral-100 font-sans">
+    <nav class="sticky top-0 z-50 bg-neutral-900/90 backdrop-blur-md border-b border-neutral-800 h-20 flex items-center px-6">
+        <div class="max-w-6xl mx-auto w-full flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold tracking-wider text-amber-400">МОНОКЛЬ</a>
+            <div class="hidden md:flex gap-2">
+                <a href="index.html" class="bg-amber-500 text-white rounded-lg px-4 py-2 transition">Головна</a>
+                <a href="about.html" class="hover:bg-neutral-800 text-neutral-300 rounded-lg px-4 py-2 transition">Про нас</a>
+                <a href="services.html" class="hover:bg-neutral-800 text-neutral-300 rounded-lg px-4 py-2 transition">Меню</a>
+                <a href="gallery.html" class="hover:bg-neutral-800 text-neutral-300 rounded-lg px-4 py-2 transition">Галерея</a>
+                <a href="booking.html" class="hover:bg-neutral-800 text-neutral-300 rounded-lg px-4 py-2 transition">Бронювання</a>
+                <a href="contacts.html" class="hover:bg-neutral-800 text-neutral-300 rounded-lg px-4 py-2 transition">Контакти</a>
+            </div>
+        </div>
+    </nav>
+    <header class="min-h-[80vh] relative bg-cover bg-center flex items-center justify-center text-center px-6" style="background-image: url('https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1920&q=80')">
+        <div class="absolute inset-0 bg-black/60"></div>
+        <div class="relative z-10 max-w-3xl">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 text-white">Кав'ярня «Монокль» у Бучі</h1>
+            <p class="text-lg md:text-xl text-neutral-300 mb-8">Затишне місце з особливою атмосферою, смачною кавою, свіжою випічкою та французьким шармом.</p>
+            <a href="booking.html" class="inline-block bg-amber-500 hover:bg-amber-600 text-white px-8 py-4 rounded-xl text-lg font-semibold shadow-2xl transition">Забронювати столик</a>
+        </div>
+    </header>
+    <section class="py-20 px-6 max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-bold mb-4 text-amber-400">Популярні позиції меню</h2>
+            <p class="text-neutral-400">Спробуйте наші найкращі страви та напої</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-neutral-800 rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden border border-neutral-700">
+                <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=800&q=80" alt="Омлет класичний" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <span class="text-xs text-amber-400 font-semibold uppercase tracking-wider">Сніданки та перекуси</span>
+                    <h3 class="text-xl font-bold mt-1 mb-2">Омлет класичний</h3>
+                    <p class="text-neutral-400 text-sm">Ніжний та повітряний омлет із свіжих яєць.</p>
+                </div>
+            </div>
+            <div class="bg-neutral-800 rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden border border-neutral-700">
+                <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80" alt="Свіжі круасани та торти" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <span class="text-xs text-amber-400 font-semibold uppercase tracking-wider">Випічка та десерти</span>
+                    <h3 class="text-xl font-bold mt-1 mb-2">Свіжі круасани та торти</h3>
+                    <p class="text-neutral-400 text-sm">Хрусткі круасани, різноманітне печиво та фірмові торти власного приготування.</p>
+                </div>
+            </div>
+            <div class="bg-neutral-800 rounded-2xl shadow-lg hover:shadow-2xl transition overflow-hidden border border-neutral-700">
+                <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80" alt="Кава від брендового обсмаження" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <span class="text-xs text-amber-400 font-semibold uppercase tracking-wider">Напої</span>
+                    <h3 class="text-xl font-bold mt-1 mb-2">Кава від брендового обсмаження</h3>
+                    <p class="text-neutral-400 text-sm">Класичні та авторські кавові напої з відбірних зерен.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-neutral-800/50 py-20 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-16 text-amber-400">Відгуки наших гостей</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-neutral-800 p-8 rounded-2xl border border-neutral-700">
+                    <p class="text-neutral-300 mb-4">«Nice kool place. Good quality food and great excellent experience while you eat the beef here, certainly the drinks are super cool as well.»</p>
+                    <span class="text-amber-400 text-sm font-semibold">— Tripadvisor Reviewer</span>
+                </div>
+                <div class="bg-neutral-800 p-8 rounded-2xl border border-neutral-700">
+                    <p class="text-neutral-300 mb-4">«The feta, blue cheese salad with berry dressing was outstanding as was the green salad with warm vegetables. Blini stuffed with spinach and cheese was excellent.»</p>
+                    <span class="text-amber-400 text-sm font-semibold">— Tripadvisor Reviewer</span>
+                </div>
+                <div class="bg-neutral-800 p-8 rounded-2xl border border-neutral-700">
+                    <p class="text-neutral-300 mb-4">«Нам очень нравиться. Уютно, мило и очень вкусно.»</p>
+                    <span class="text-amber-400 text-sm font-semibold">— Visitor</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-neutral-950 text-neutral-400 py-12 border-t border-neutral-800">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-white font-bold text-lg mb-4 text-amber-400">Монокль</h3>
+                <p class="text-sm">Затишна кав'ярня у Бучі з особливою атмосферою та неперевершеною кавою.</p>
+            </div>
+            <div>
+                <h3 class="text-white font-bold text-lg mb-4">Контакти</h3>
+                <p class="text-sm mb-2">вул. Пушкінська, 2л, Буча</p>
+                <p class="text-sm mb-2">+380671234567</p>
+                <p class="text-sm">info@monokl.bucha.ua</p>
+            </div>
+            <div>
+                <h3 class="text-white font-bold text-lg mb-4">Години роботи</h3>
+                <p class="text-sm mb-2">Пн-Нд: 09:00 - 21:00</p>
+            </div>
+        </div>
+    </footer>
+<script>
+    document.getElementById('mobile-toggle')?.addEventListener('click', function() {
+      document.getElementById('mobile-menu')?.classList.toggle('hidden');
+    });
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+      });
+    });
+  </script>
+</body>
+</html>
