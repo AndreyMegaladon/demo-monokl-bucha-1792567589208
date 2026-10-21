@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Про нас — Монокль</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-neutral-900 text-neutral-100 font-sans">
+    <nav class="sticky top-0 z-50 bg-neutral-900/90 backdrop-blur-md border-b border-neutral-800 h-20 flex items-center px-6">
+        <div class="max-w-6xl mx-auto w-full flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold tracking-wider text-amber-400">МОНОКЛЬ</a>
+            <div class="hidden md:flex gap-2">
+                <a href="index.html" class="hover:bg-neutral-800 text-neutral-300 rounded-lg px-4 py-2 transition">Головна</a>
+                <a href="about.html" class="bg-amber-500 text-white rounded-lg px-4 py-2 transition">Про нас</a>
+                <a href="services.html" class="hover:bg-neutral-800 text-neutral-300 rounded-lg px-4 py-2 transition">Меню</a>
+                <a href="gallery.html" class="hover:bg-neutral-800 text-neutral-300 rounded-lg px-4 py-2 transition">Галерея</a>
+                <a href="booking.html" class="hover:bg-neutral-800 text-neutral-300 rounded-lg px-4 py-2 transition">Бронювання</a>
+                <a href="contacts.html" class="hover:bg-neutral-800 text-neutral-300 rounded-lg px-4 py-2 transition">Контакти</a>
+            </div>
+        </div>
+    </nav>
+    <div class="bg-neutral-800/30 border-b border-neutral-800 py-3 px-6">
+        <div class="max-w-6xl mx-auto text-sm text-neutral-400">
+            <a href="index.html" class="hover:text-amber-400">Головна</a> > <span class="text-amber-400">Про нас</span>
+        </div>
+    </div>
+    <section class="py-20 px-6 max-w-4xl mx-auto">
+        <h1 class="text-4xl font-bold mb-8 text-amber-400">Про кав'ярню «Монокль»</h1>
+        <div class="space-y-6 text-neutral-300 leading-relaxed text-lg">
+            <p>«Монокль» — це затишна кав'ярня та кафе у місті Буча, розташована на вулиці Пушкінській, 2л. Заклад приваблює гостей своєю неповторною атмосферою європейського старовинного дизайну: муровані з цегли стіни, м'які та акуратні диванчики, різьблені меблі, латунні світильники та чорно-біла гама у позолоті створюють відчуття домашнього затишку та вишуканості.</p>
+            <p>Головною гордістю закладу є якісна кава, яку готують із відбірних зерен спеціального обсмаження, а також свіжоприготовлена випічка, десерти, круасани та печиво. У меню також представлені легкі перекуси, поживні сніданки, омлети, чіабати та вишукані салати.</p>
+            <p>«Монокль» — це не просто місце для смачної кави, а справжній простір для відпочинку. Тут часто влаштовують музичні вечори, літературні зібрання, а гості мають можливість почитати улюблені книги або зіграти в нарди у приємній компанії.</p>
+        </div>
+        <div class="mt-16">
+            <h2 class="text-2xl font-bold mb-6 text-amber-400">Особливості закладу</h2>
+            <ul class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <li class="bg-neutral-800 p-6 rounded-xl border border-neutral-700">
+                    <span class="text-amber-400 font-bold block mb-2">Інтер'єр</span>
+                    <p class="text-sm text-neutral-300">Інтер'єр у старовинному європейському стилі з мурованими цегляними стінами та чорно-білими меблями у позолоті.</p>
+                </li>
+                <li class="bg-neutral-800 p-6 rounded-xl border border-neutral-700">
+                    <span class="text-amber-400 font-bold block mb-2">Події</span>
+                    <p class="text-sm text-neutral-300">Проведення музичних вечорів та літературних зібрань для справжніх поціновувачів.</p>
+                </li>
+                <li class="bg-neutral-800 p-6 rounded-xl border border-neutral-700">
+                    <span class="text-amber-400 font-bold block mb-2">Розваги</span>
+                    <p class="text-sm text-neutral-300">Можливість для гостей пограти в нарди та почитати книги під час візиту.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <footer class="bg-neutral-950 text-neutral-400 py-12 border-t border-neutral-800">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-white font-bold text-lg mb-4 text-amber-400">Монокль</h3>
+                <p class="text-sm">Затишна кав'ярня у Бучі з особливою атмосферою та неперевершеною кавою.</p>
+            </div>
+            <div>
+                <h3 class="text-white font-bold text-lg mb-4">Контакти</h3>
+                <p class="text-sm mb-2">вул. Пушкінська, 2л, Буча</p>
+                <p class="text-sm mb-2">+380671234567</p>
+                <p class="text-sm">info@monokl.bucha.ua</p>
+            </div>
+            <div>
+                <h3 class="text-white font-bold text-lg mb-4">Години роботи</h3>
+                <p class="text-sm mb-2">Пн-Нд: 09:00 - 21:00</p>
+            </div>
+        </div>
+    </footer>
+<script>
+    document.getElementById('mobile-toggle')?.addEventListener('click', function() {
+      document.getElementById('mobile-menu')?.classList.toggle('hidden');
+    });
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+      });
+    });
+  </script>
+</body>
+</html>
