@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бронювання — Монокль</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-neutral-900 text-neutral-100 font-sans">
+    <nav class="sticky top-0 z-50 bg-neutral-900/90 backdrop-blur-md border-b border-neutral-800 h-20 flex items-center px-6">
+        <div class="max-w-6xl mx-auto w-full flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold tracking-wider text-amber-400">МОНОКЛЬ</a>
+            <div class="hidden md:flex gap-2">
+                <a href="index.html" class="hover:bg-neutral-800 text-neutral-300 rounded-lg px-4 py-2 transition">Головна</a>
+                <a href="about.html" class="hover:bg-neutral-800 text-neutral-300 rounded-lg px-4 py-2 transition">Про нас</a>
+                <a href="services.html" class="hover:bg-neutral-800 text-neutral-300 rounded-lg px-4 py-2 transition">Меню</a>
+                <a href="gallery.html" class="hover:bg-neutral-800 text-neutral-300 rounded-lg px-4 py-2 transition">Галерея</a>
+                <a href="booking.html" class="bg-amber-500 text-white rounded-lg px-4 py-2 transition">Бронювання</a>
+                <a href="contacts.html" class="hover:bg-neutral-800 text-neutral-300 rounded-lg px-4 py-2 transition">Контакти</a>
+            </div>
+        </div>
+    </nav>
+    <div class="bg-neutral-800/30 border-b border-neutral-800 py-3 px-6">
+        <div class="max-w-6xl mx-auto text-sm text-neutral-400">
+            <a href="index.html" class="hover:text-amber-400">Головна</a> > <span class="text-amber-400">Бронювання</span>
+        </div>
+    </div>
+    <section class="py-20 px-6">
+        <div class="max-w-2xl mx-auto bg-neutral-800 rounded-3xl shadow-2xl p-10 border border-neutral-700">
+            <div class="text-center mb-10">
+                <h1 class="text-3xl font-bold mb-2 text-amber-400">Забронювати столик</h1>
+                <p class="text-neutral-400">Заповніть форму нижче, і ми зв'яжемося з вами для підтвердження</p>
+            </div>
+            <form action="https://formsubmit.co/info@monokl.bucha.ua" method="POST" class="space-y-6">
+                <div>
+                    <label class="block text-sm font-medium mb-2 text-neutral-300">Ваше ім'я</label>
+                    <input type="text" name="name" required class="w-full px-5 py-4 bg-neutral-900 border-2 border-neutral-700 rounded-xl focus:border-amber-500 focus:ring-4 focus:ring-amber-500/20 text-white outline-none transition" placeholder="Олександр">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium mb-2 text-neutral-300">Номер телефону</label>
+                    <input type="tel" name="phone" required class="w-full px-5 py-4 bg-neutral-900 border-2 border-neutral-700 rounded-xl focus:border-amber-500 focus:ring-4 focus:ring-amber-500/20 text-white outline-none transition" placeholder="+380...">
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-medium mb-2 text-neutral-300">Дата</label>
+                        <input type="date" name="date" required class="w-full px-5 py-4 bg-neutral-900 border-2 border-neutral-700 rounded-xl focus:border-amber-500 focus:ring-4 focus:ring-amber-500/20 text-white outline-none transition">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium mb-2 text-neutral-300">Час</label>
+                        <input type="time" name="time" required class="w-full px-5 py-4 bg-neutral-900 border-2 border-neutral-700 rounded-xl focus:border-amber-500 focus:ring-4 focus:ring-amber-500/20 text-white outline-none transition">
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium mb-2 text-neutral-300">Кількість гостей</label>
+                    <input type="number" name="guests" min="1" max="10" value="2" required class="w-full px-5 py-4 bg-neutral-900 border-2 border-neutral-700 rounded-xl focus:border-amber-500 focus:ring-4 focus:ring-amber-500/20 text-white outline-none transition">
+                </div>
+                <button type="submit" class="w-full bg-gradient-to-r from-amber-500 to-orange-500 text-white py-5 rounded-xl text-lg font-bold hover:shadow-xl transition">Підтвердити бронювання</button>
+            </form>
+        </div>
+    </section>
+    <footer class="bg-neutral-950 text-neutral-400 py-12 border-t border-neutral-800">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-white font-bold text-lg mb-4 text-amber-400">Монокль</h3>
+                <p class="text-sm">Затишна кав'ярня у Бучі з особливою атмосферою та неперевершеною кавою.</p>
+            </div>
+            <div>
+                <h3 class="text-white font-bold text-lg mb-4">Контакти</h3>
+                <p class="text-sm mb-2">вул. Пушкінська, 2л, Буча</p>
+                <p class="text-sm mb-2">+380671234567</p>
+                <p class="text-sm">info@monokl.bucha.ua</p>
+            </div>
+            <div>
+                <h3 class="text-white font-bold text-lg mb-4">Години роботи</h3>
+                <p class="text-sm mb-2">Пн-Нд: 09:00 - 21:00</p>
+            </div>
+        </div>
+    </footer>
+<script>
+    document.getElementById('mobile-toggle')?.addEventListener('click', function() {
+      document.getElementById('mobile-menu')?.classList.toggle('hidden');
+    });
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+      });
+    });
+  </script>
+</body>
+</html>
